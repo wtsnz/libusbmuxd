@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
  }
  
   s.author = 'Will Townsend' 
-  s.platform = :osx, '10.10' 
+  s.ios.deployment_target = '9.2'
+  s.osx.deployment_target = '10.10'
   s.source = { :git => "https://github.com/wtsnz/libusbmuxd.git", :tag => "v#{s.version}"}
   s.source_files = 'src/*.{h,c,m,cpp}', 'include/*.h', 'common/*.{h,c,m,cpp}'
   s.dependency 'libplist'
